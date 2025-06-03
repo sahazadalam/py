@@ -1,0 +1,13 @@
+# Taking user input
+cost_price = float(input("Enter the cost price of the bike: "))
+
+# Calculating road tax
+if cost_price > 100000:
+    tax = 0.15 * cost_price
+elif cost_price > 50000:
+    tax = 0.10 * cost_price
+else:
+    tax = 0.05 * cost_price
+
+# Displaying result
+print(f"Road tax to be paid: {tax:.2f}")

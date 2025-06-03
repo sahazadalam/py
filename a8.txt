@@ -1,0 +1,24 @@
+# Get the number of elements
+n = int(input("Enter the value of n: "))
+lst = []
+
+# Input list elements
+for i in range(n):
+    print(f"Enter the data for position {i}:")
+    data = int(input())
+    lst.append(data)
+
+# Show list before swapping
+print("Before swapping the list:")
+print(lst)
+
+# Input positions to swap
+pos1 = int(input("Enter the first position to swap: "))
+pos2 = int(input("Enter the second position to swap: "))
+
+# Swap the elements
+lst[pos1], lst[pos2] = lst[pos2], lst[pos1]
+
+# Show list after swapping
+print("After swapping the list:")
+print(lst)

@@ -1,0 +1,10 @@
+# Get input from the user
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+
+# Using nested ternary operator to find the biggest number
+biggest = a if (a > b and a > c) else (b if b > c else c)
+
+# Print the result
+print("The biggest number is:", biggest)

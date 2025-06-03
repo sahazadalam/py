@@ -1,0 +1,38 @@
+# Writing to a File 
+file = open("example.txt", "w")
+file.write("Hello, this is line one.\n")
+file.write("This is line two.\n")
+file.write("And here is line three.")
+file.close() 
+
+# Reading the File: read()
+file = open("example.txt", "r") 
+print("1. Using read():")
+print(file.read()) 
+file.close()
+
+# Reading the File: read(n)
+file = open("example.txt", "r")
+print("\n2. Using read(10):")
+print(file.read(10))
+file.close()
+
+# Reading the File: readline()
+file = open("example.txt", "r")
+print("\n3. Using readline():")
+print(file.readline())  
+print(file.readline())  
+file.close()
+
+# Reading the File: readlines() 
+file = open("example.txt", "r")
+print("\n4. Using readlines():")
+lines = file.readlines() 
+print(lines)
+file.close()
+
+# Auto-closing with 'with open'
+print("\n5. Using 'with open' (auto-closing method):")
+with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)

@@ -1,0 +1,18 @@
+# Runtime reading of string
+string = input("Enter a sentence: ")
+
+# String slicing
+print("\n--- String Slicing ---")
+print("First 5 characters:", string[:5])
+print("Characters from index 5 to 10:", string[5:11])
+print("Last 5 characters:", string[-5:])
+print("Every second character:", string[::2])
+print("Reversed string:", string[::-1])
+
+# String methods
+print("\n--- String Methods ---")
+print("1. Uppercase:", string.upper())
+print("2. Lowercase:", string.lower())
+print("3. Title Case:", string.title())
+print("4. Count of 'a':", string.count('a'))
+print("5. Replacing spaces with hyphens:", string.replace(' ', '-'))

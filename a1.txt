@@ -1,0 +1,28 @@
+import math
+import cmath
+
+# Input values
+a = float(input("Enter the value of a: "))
+b = float(input("Enter the value of b: "))
+c = float(input("Enter the value of c: "))
+
+# Calculate discriminant
+d = (b ** 2) - (4 * a * c)
+
+# Determine the nature of the roots and compute accordingly
+if d == 0:
+    print("The roots are real and equal")
+    root1 = (-b + math.sqrt(d)) / (2 * a)
+    root2 = (-b - math.sqrt(d)) / (2 * a)
+elif d > 0:
+    print("The roots are real and distinct")
+    root1 = (-b + math.sqrt(d)) / (2 * a)
+    root2 = (-b - math.sqrt(d)) / (2 * a)
+else:
+    print("The roots are imaginary (complex)")
+    root1 = (-b + cmath.sqrt(d)) / (2 * a)
+    root2 = (-b - cmath.sqrt(d)) / (2 * a)
+
+# Display the roots
+print("Root 1 =", root1)
+print("Root 2 =", root2)

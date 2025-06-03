@@ -1,0 +1,104 @@
+# 1. Single Inheritance
+class Animal:
+    def speak(self):
+        print("Animal speaks")
+
+class Dog(Animal):
+    def bark(self):
+        print("Dog barks")
+
+
+# 2. Multiple Inheritance
+class Father:
+    def house(self):
+        print("Father gives house")
+
+class Mother:
+    def jewelry(self):
+        print("Mother gives jewelry")
+
+class Child(Father, Mother):
+    def own_property(self):
+        print("Child has own property")
+
+
+# 3. Multilevel Inheritance
+class Vehicle:
+    def vehicle_info(self):
+        print("This is a vehicle")
+
+class Car(Vehicle):
+    def car_info(self):
+        print("This is a car")
+
+class SportsCar(Car):
+    def sports_info(self):
+        print("This is a sports car")
+
+
+# 4. Hierarchical Inheritance
+class Shape:
+    def describe(self):
+        print("This is a shape")
+
+class Circle(Shape):
+    def draw_circle(self):
+        print("Drawing a circle")
+
+class Square(Shape):
+    def draw_square(self):
+        print("Drawing a square")
+
+
+# 5. Hybrid Inheritance
+class A:
+    def method_a(self):
+        print("Method of A")
+
+class B(A):
+    def method_b(self):
+        print("Method of B")
+
+class C:
+    def method_c(self):
+        print("Method of C")
+
+class D(B, C):  # Hybrid of multilevel and multiple
+    def method_d(self):
+        print("Method of D")
+
+
+# Object Creation and Method Calls
+
+print("=== Single Inheritance ===")
+dog = Dog()
+dog.speak()
+dog.bark()
+
+print("\n=== Multiple Inheritance ===")
+child = Child()
+child.house()
+child.jewelry()
+child.own_property()
+
+print("\n=== Multilevel Inheritance ===")
+sportscar = SportsCar()
+sportscar.vehicle_info()
+sportscar.car_info()
+sportscar.sports_info()
+
+print("\n=== Hierarchical Inheritance ===")
+circle = Circle()
+circle.describe()
+circle.draw_circle()
+
+square = Square()
+square.describe()
+square.draw_square()
+
+print("\n=== Hybrid Inheritance ===")
+d = D()
+d.method_a()
+d.method_b()
+d.method_c()
+d.method_d()

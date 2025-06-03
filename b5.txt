@@ -1,0 +1,21 @@
+def main():
+    filename = "data.txt"
+
+    # Create file with 10 lines
+    with open(filename, "w") as f:
+        for i in range(10):
+            f.write(f"Line {i}\n")
+
+    pos = int(input("Enter line number (0-9) to read: "))
+    if pos < 0 or pos > 9:
+        print("Invalid position!")
+        return
+
+    with open(filename, "r") as f:
+        for _ in range(pos): 
+            f.readline()
+        line = f.readline()
+        print(f"Line at position {pos}: {line.strip()}")
+
+if __name__ == "__main__":
+    main()

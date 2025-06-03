@@ -1,0 +1,7 @@
+t = (2, 5, 7, 2)
+values = t
+total = sum(values)
+avg = total / len(values) if values else 0
+print("Unpacked Values:", values)
+print("Sum:", total)
+print("Average:", avg)

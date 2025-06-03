@@ -1,0 +1,18 @@
+# Create a dictionary with string keys
+student_marks = {
+    "John": 85,
+    "Alice": 92,
+    "Bob": 78,
+    "David": 88,
+    "Charlie": 90
+}
+
+# Print the original dictionary
+print("Original Dictionary:")
+print(student_marks)
+
+# Sort the dictionary by key (alphabetically)
+sorted_student_marks = dict(sorted(student_marks.items()))
+
+print("\nDictionary Sorted by Key:")
+print(sorted_student_marks)

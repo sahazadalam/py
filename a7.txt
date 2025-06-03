@@ -1,0 +1,15 @@
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        fact = 1
+        for i in range(1, n + 1):
+            fact *= i
+        return fact
+
+# Taking user input
+num = int(input("Enter a number: "))
+
+# Calculating factorial and displaying result
+result = factorial(num)
+print(f"Factorial of {num} is {result}")
